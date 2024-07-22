@@ -116,6 +116,9 @@ background-repeat: no-repeat;
 margin: 12px;
     padding: 44px;
 }
+  .section {
+            display: none;
+        }
 </style>
 
 </head>
@@ -129,7 +132,7 @@ margin: 12px;
             aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#intro">Another action</a>
             <a class="dropdown-item" href="#">Something else here</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Separated link</a>
@@ -227,7 +230,7 @@ adventure
 
 </div><!--container-->
 </div>
-<section class="section" id="intro">
+<section class="section" id="intro" style="display: none;">
     <div class="container text-center">
         <h2>Unveil Paradise: Discover Why St. Barts is Every Traveler’s Dream</h2>
         <p>St. Barts, a gem in the Caribbean, offers an unparalleled escape from the ordinary. This luxurious island
@@ -253,6 +256,11 @@ adventure
         strings: ("Escape to Elegance: St. Barts' Beauty!"),
         autoStart: true,
     });
+
+    function showSection(id){
+
+        document.getElementById(id).style.display = 'block';
+    }
 </script>
 </body>
 </html>
