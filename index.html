@@ -1,445 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Travel Destination: St. Barts</title>
-
-<!--bootstrap css-->
+    <!--bootstrap css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-<!--Google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-<!--Type Writer-->
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-<!-- jQuery, Popper.js, Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<!--Type Writer-->
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<!--slick css-->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-<style>
-  body {
-background: linear-gradient(138deg, rgb(32, 201, 255) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
-          scroll-behavior: smooth;
-
-
-
-          overflow-x: hidden;
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!--slick css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <style>
+        body {
+            background: linear-gradient(138deg, rgb(32, 201, 255) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
+            overflow-x: hidden;
         }
 
-
-        p{
-font-family: var(--font-family);
+        p {
+            font-family: var(--font-family);
             color: rgb(151, 155, 191);
         }
 
+        .zar {
+            font-family: var(--font-family);
+            color: rgb(0, 0, 0);
+        }
 
-      .zar{
-font-family: var(--font-family);
-  color: rgb(0, 0, 0);
-      }  
-:root{
---text-align: center;
---font-family: 'Cinzel';
-    
-}
+        :root {
+            --text-align: center;
+            --font-family: 'Cinzel';
+        }
 
-h1{
-font-family: var(--font-family);
-color: rgb(255, 255, 255);
+        h1 {
+            font-family: var(--font-family);
+            color: rgb(255, 255, 255);
+        }
 
+        .img-fluid {
+            animation: newWay 10s infinite;
+            width: 100%;
+        }
 
+        img {
+            max-width: 100%;
+        }
 
-}
-  .img-fluid{
+        .gosp {
+            margin-top: 88px;
+        }
 
+        .near {
+            background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/943/original/The_Seasons.png?1721249946');
+        }
 
-   
+        .loe {
+            padding: 113px;
+            background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/988/original/The_Seasons.png?1721263454');
+            background-size: cover;
+            border: 1px solid white;
+            background-repeat: no-repeat;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
 
-    animation: newWay 10s infinite;
-    width: 100%;
-  }
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.631);
+            }
 
-img{
+            100% {
+                box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgba(81, 174, 255, 0.8);
+            }
+        }
 
-    max-width: 100%;
-}
-.gosp{
+        .clar {
+            background-color: rgba(255, 255, 255, 0.969);
+            margin: 12px;
+            animation: glow 1.5s ease-in-out infinite alternate;
+            padding: 44px;
+        }
 
-    margin-top: 88px;
-}
-
-.near{
-
-background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/943/original/The_Seasons.png?1721249946');
-
-
-}
-
-.loe{
-
-
-
-padding: 113px;
-background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/988/original/The_Seasons.png?1721263454');
-background-size: cover;
-border: 1px solid white;
-background-repeat: no-repeat;
-
-  animation: glow 1.5s ease-in-out infinite alternate;
-}
-   @keyframes glow {
-     0% {
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.631);
-    }
-    100% {
-        box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgba(81, 174, 255, 0.8);
-    }
-}
-.clar{
-
-
-    background-color: rgba(255, 255, 255, 0.969);
-margin: 12px;
-  animation: glow 1.5s ease-in-out infinite alternate;
-
-    padding: 44px;
-}
-  .section {
+        .section {
             display: none;
         }
 
-      .harr{
+        .harr {
+            border: 1px solid white;
+            margin: 14px;
+        }
 
-        border: 1px solid white;
+        .navbar {
+            background: linear-gradient(138deg, rgba(32, 199, 255, 0.379) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
+        }
 
-margin: 14px;
+        .navbar .dropdown-menu {
+            background-color: #001b3738;
+        }
 
-      }  
+        .dropdown-menu .dropdown-item {
+            font-family: var(--font-family);
+            color: rgb(255, 255, 255);
+        }
 
-.navbar{
+        .dropdown-menu .dropdown-item:hover {
+            color: black;
+        }
 
-background: linear-gradient(138deg, rgba(32, 199, 255, 0.379) 36.7%, rgb(0, 8, 187) 84.4%, rgb(255, 255, 255) 119.7%);
-    
-}
-   .navbar .dropdown-menu {
-      background-color: #001b3738 ; 
+        .star {
+            margin-left: -14px;
+        }
 
-}
+        .navbar .nav-item .nav-link.active {
+            font-family: var(--font-family);
+            background-color: rgba(0, 0, 0, 0);
+        }
 
+        h2 {
+            text-align: var(--text-align);
+            font-family: var(--font-family);
+            color: white;
+        }
 
+        .nav-link {
+            font-family: var(--font-family);
+            background-color: rgba(0, 0, 0, 0);
+        }
 
-.dropdown-menu .dropdown-item{
+        h3 {
+            font-family: var(--font-family);
+            color: rgb(255, 255, 255);
+        }
 
-font-family: var(--font-family);
- color: rgb(255, 255, 255);
-}
+        input {
+            font-family: var(--font-family);
+        }
 
-.dropdown-menu .dropdown-item:hover{
-color: black;
+        label {
+            color: rgb(255, 255, 255);
+            font-family: var(--font-family);
+            margin: 12px;
+        }
 
-
-}
-
-
-
-  .star{
-margin-left: -14px;
-    
-  } 
-
-
-.navbar .nav-item .nav-link.active {
-font-family: var(--font-family);
-
-background-color: rgba(0, 0, 0, 0);
-
-}
-
-h2{
-text-align: var(--text-align);
-font-family: var(--font-family);
-color: white;
-}
-
-.nav-link{
-  font-family: var(--font-family); 
-   background-color: rgba(0, 0, 0, 0);
-}
-h3{
-font-family: var(--font-family);
-color: rgb(255, 255, 255);
-
-}
-
-input{
-
-font-family: var(--font-family);
-    
-}
-label{
-
-color: rgb(255, 255, 255);
-font-family: var(--font-family);
-margin: 12px;
-}
-input[type="submit"]{
-   margin: 12px; 
-
-   background-color: rgb(255, 255, 255);
-border: none;
-
-box-shadow: 0 0 8px;
-}
-</style>
-
+        input[type="submit"] {
+            margin: 12px;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            box-shadow: 0 0 8px;
+        }
+    </style>
 </head>
+
 <body>
-<ul class="nav nav-pills navbar">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-            aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#intro" onclick="showSection('intro')"  >Intro</a>
-            <a class="dropdown-item" href="#" >🏝️ ☀️Exquisite Beaches 🏝️ ☀️ </a>
-            <a class="dropdown-item" href="#">✨ 💎World-Class Resorts✨ 💎</a>
-    <a class="dropdown-item" href="#">🍛 🥘Gourmet Dining🍛 🥘</a>
-    <a class="dropdown-item" href="#">🇧🇱🌺💃🏽Vibrant Culture🇧🇱🌺💃🏽</a>
-
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#"></a>
+    <ul class="nav nav-pills navbar">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#intro" onclick="showSection('intro')">Intro</a>
+                <a class="dropdown-item" href="#">🏝️ ☀️Exquisite Beaches 🏝️ ☀️ </a>
+                <a class="dropdown-item" href="#">✨ 💎World-Class Resorts✨ 💎</a>
+                <a class="dropdown-item" href="#">🍛 🥘Gourmet Dining🍛 🥘</a>
+                <a class="dropdown-item" href="#">🇧🇱🌺💃🏽Vibrant Culture🇧🇱🌺💃🏽</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"></a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
+    <div class="near">
+        <div class="row justify-content-center">
+            <img class="img-fluid"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/926/original/The_Seasons_copy.gif?1721244085"
+                alt="">
+        </div><!--row-->
+        <div class="row justify-content-end loe">
+            <div class="col-md-6">
+                <h1 id="typewriter-text"></h1>
+            </div>
         </div>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-</ul>
-<div class="near">
-<div class="row justify-content-center">
-
-
-<img class="img-fluid" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/926/original/The_Seasons_copy.gif?1721244085" alt="" srcset="">
-
-
-
-</div><!--row-->
-<div class="row justify-content-end loe">
-
-
-
- 
-<div class="col-md-6">
-    
-    <h1 id="typewriter-text"></h1>
-
-</div>
-    
-
-
-
-  
-
-
-
-
-
-</div>
-<br>
-
-<div class="container-fluid">
-
-    
-<div class="row justify-content-center harr">
-<div class="col-6">
-<img class="star"    src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/223/original/The_Seasons.gif?1721332187" alt="" srcset="">
-
-
-
-</div>
-   <div class="col-md-6">
-
-<div class="clar">
-<p class="zar">
-
-St. Barts, a gem in the Caribbean, offers an unparalleled escape from the ordinary. This luxurious island beckons with
-its pristine beauty and exclusive charm, making it the ultimate destination for those seeking both relaxation and
-adventure
-
-</p>
-
-</div>
-
-   </div> 
-
-
-
-</div>
-
-
-
-</div><!--container-fluid-->
-
-
-
-
-
-
-
-
-<div class="container">
-
-
-<div class="row justify-content-center">
-<div class="first">
-
-
-</div>
-
-
-</div><!--row-->
-
-
-
-</div><!--container-->
-</div>
-<section class="section" id="intro" style="display: none;">
-    <div class="container text-center">
-        <h2>Unveil Paradise: Discover Why St. Barts is Every Traveler’s Dream</h2>
-        <p>St. Barts, a gem in the Caribbean, offers an unparalleled escape from the ordinary. This luxurious island
-            beckons with its pristine beauty and exclusive charm, making it the ultimate destination for those seeking
-            both relaxation and adventure. Here’s why St. Barts should be at the top of your travel list:</p>
-        <ul>
-            <li><strong>Exquisite Beaches:</strong> Experience some of the most stunning beaches in the world, with
-                powdery white sands and crystal-clear waters perfect for sunbathing and swimming.</li>
-            <li><strong>World-Class Resorts:</strong> Indulge in opulent accommodations where every detail is crafted
-                for your comfort and enjoyment, offering breathtaking views and unparalleled service.</li>
-            <li><strong>Gourmet Dining:</strong> Savor a diverse culinary experience with top-tier restaurants serving
-                exquisite dishes from local seafood to international cuisine.</li>
-            <li><strong>Vibrant Culture:</strong> Immerse yourself in the island’s rich culture with art galleries,
-                music festivals, and charming local markets.</li>
-            <li><strong>Exclusive Atmosphere:</strong> Enjoy the serene and sophisticated ambiance of a destination
-                favored by celebrities and discerning travelers alike.</li>
-        </ul>
+        <br>
+        <div class="container-fluid">
+            <div class="row justify-content-center harr">
+                <div class="col-6">
+                    <img class="star"
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/223/original/The_Seasons.gif?1721332187"
+                        alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="clar">
+                        <p class="zar">
+                            St. Barts, a gem in the Caribbean, offers an unparalleled escape from the ordinary. This
+                            luxurious island beckons with its pristine beauty and exclusive charm, making it the
+                            ultimate destination for those seeking both relaxation and adventure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!--container-fluid-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="your-class">
+                    <div>ylisa</div>
+                    <div>daved</div>
+                    <div>jane</div>
+                    <div>123</div>
+                    <div>444</div>
+                    <div>777</div>
+                </div>
+            </div><!--row-->
+        </div><!--container-->
     </div>
-</section>
-
-<div class="container">
-<div class="row">
-<div class="your-class">
-    <div>ylisa</div>
-    <div>daved</div>
-    <div>jane</div>
-</div>
-
-</div>
-
-</div><!--slick beach-->
-
-<div class="container">
-
-    <h2>
-        Stay In Touch With St Barts
-    </h2>
-<p>
-
-Join our exclusive mailing list and be the first to receive updates, offers, and enchanting stories from the paradise of
-Saint Barts.
-</p>
-
-
-
-<div class="row justify-content-center">
-<div class="col-3">
-
-<form action="/submit"  onsubmit="return flase;"    method="post">
-<label for="name">
-Name:
-</label>
-
-<input type="text" id="name" name="name" autocomplete="name">
-<label for="email">
-
-Email:
-</label>
-
-<input type="text" id="email" name="email" placeholder="Enter email here" autocomplete="email">
-
-
-<input type="submit"   value="submit"  >
-
-
-</form>
-
-</div>
-
-
-</div>
-
-</div><!--form-->
-
-
-<div class="container">
-<div class="row justify-content-center">
-<section>
-
-<ul>
-
-<h3>
-
-    This Project was coded by Athenah Coucean
-</h3>
-
-</ul>
-
-
-</section>
-
-</div>
-
-
-</div><!--end-->
-
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-
-
-<script>
-
-
-    function showSection(id){
-
-        document.getElementById(id).style.display = 'block';
-    }
-
-    $('.your-class').slick();
-  
-</script>
+    <section class="section" id="intro" style="display: none;">
+        <div class="container text-center">
+            <h2>Unveil Paradise: Discover Why St. Barts is Every Traveler’s Dream</h2>
+            <p>St. Barts, a gem in the Caribbean, offers an unparalleled escape from the ordinary. This luxurious island
+                beckons with its pristine beauty and exclusive charm, making it the ultimate destination for those
+                seeking
+                both relaxation and adventure. Here’s why St. Barts should be at the top of your travel list:</p>
+            <ul>
+                <li><strong>Exquisite Beaches:</strong> Experience some of the most stunning beaches in the world, with
+                    powdery white sands and crystal-clear waters perfect for sunbathing and swimming.</li>
+                <li><strong>World-Class Resorts:</strong> Indulge in opulent accommodations where every detail is
+                    crafted
+                    for your comfort and enjoyment, offering breathtaking views and unparalleled service.</li>
+                <li><strong>Gourmet Dining:</strong> Savor a diverse culinary experience with top-tier restaurants
+                    serving
+                    exquisite dishes from local seafood to international cuisine.</li>
+                <li><strong>Vibrant Culture:</strong> Immerse yourself in the island’s rich culture with art galleries,
+                    music festivals, and charming local markets.</li>
+                <li><strong>Exclusive Atmosphere:</strong> Enjoy the serene and sophisticated ambiance of a destination
+                    favored by celebrities and discerning travelers alike.</li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <h2>Stay In Touch With St Barts</h2>
+        <p>Join our exclusive mailing list and be the first to receive updates, offers, and enchanting stories from the
+            paradise of Saint Barts.</p>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <form action="/submit" onsubmit="return false;" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" autocomplete="name">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter email here" autocomplete="email">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </div><!--form-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <section>
+                <ul>
+                    <h3>This Project was coded by Athenah Coucean</h3>
+                </ul>
+            </section>
+        </div>
+    </div><!--end-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        function showSection(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        $(document).ready(function () {
+            $('.your-class').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        });
+    </script>
 </body>
+
 </html>
