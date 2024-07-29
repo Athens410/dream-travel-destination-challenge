@@ -291,9 +291,11 @@ text-align: center;
             <section class="star">
 
 
-                
+
                 <ul>
                     <h3>🌺This Project was coded by Athenah Coucean🌺</h3>
+                    <a class="nav-link disabled" id="copy" href="#" tabindex="-1" aria-disabled="true">©
+                    </a>
                 </ul>
             </section>
         </div>
@@ -317,6 +319,8 @@ text-align: center;
             slidesToShow: 3,
             slidesToScroll: 3
         });
+const year = new Date().getFullYear();
+        document.getElementById('copy').textContent = `Shecodes ${year} all rights Reserved `;
     </script>
 </body>
 
